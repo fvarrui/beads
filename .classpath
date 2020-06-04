@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="tutorial"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
-	<classpathentry kind="lib" path="dependencies/beads.jar"/>
-	<classpathentry kind="lib" path="dependencies/beads-io.jar"/>
-	<classpathentry kind="lib" path="dependencies/jarjar-1.0.jar"/>
-	<classpathentry kind="lib" path="dependencies/jl1.0.1.jar"/>
-	<classpathentry kind="lib" path="dependencies/jna.jar"/>
-	<classpathentry kind="lib" path="dependencies/mp3spi1.9.4.jar"/>
-	<classpathentry kind="lib" path="dependencies/org-jaudiolibs-audioservers-jack.jar"/>
-	<classpathentry kind="lib" path="dependencies/org-jaudiolibs-audioservers-javasound.jar"/>
-	<classpathentry kind="lib" path="dependencies/org-jaudiolibs-audioservers.jar"/>
-	<classpathentry kind="lib" path="dependencies/org-jaudiolibs-jnajack.jar"/>
-	<classpathentry kind="lib" path="dependencies/tools.jar"/>
-	<classpathentry kind="lib" path="dependencies/tritonus_aos-0.3.6.jar"/>
-	<classpathentry kind="lib" path="dependencies/tritonus_share.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/main/tutorial"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
