@@ -85,7 +85,8 @@ public class JavaSoundAudioIO extends AudioIO {
 	 */
 	private void getDefaultMixerIfNotAlreadyChosen() {
 		if(mixer == null) {
-			selectMixer(0);
+			// FIXIT selectMixer(0);
+			selectMixer(4);
 		} 
 	}
 
