@@ -1,3 +1,4 @@
+package net.beadsproject.beads.tutorial;
 
 
 import net.beadsproject.beads.core.AudioContext;

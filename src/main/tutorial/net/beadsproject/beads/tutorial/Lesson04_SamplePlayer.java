@@ -1,4 +1,7 @@
+package net.beadsproject.beads.tutorial;
 
+
+import com.sun.tools.javac.launcher.Main;
 
 import net.beadsproject.beads.core.AudioContext;
 import net.beadsproject.beads.data.SampleManager;
@@ -23,10 +26,11 @@ public class Lesson04_SamplePlayer {
 		 * keeps track of loaded audio files according to their file names, so
 		 * you don't have to load them again.
 		 */
-		String audioFile = "audio/1234.aif";
+		String audioFile = "src/main/resources/audio/1234.aif";
+		
 		// SampleManager.setBufferingRegime(Sample.Regime.newStreamingRegime(1000));
-		SamplePlayer player = new SamplePlayer(ac, SampleManager
-				.sample(audioFile));
+		SamplePlayer player = new SamplePlayer(ac, SampleManager.sample(audioFile));
+		
 		/*
 		 * And as before...
 		 */

@@ -1,3 +1,4 @@
+package net.beadsproject.beads.tutorial;
 
 
 import net.beadsproject.beads.core.AudioContext;
@@ -83,6 +84,7 @@ public class Lesson06_Trigger {
 		   Bead myTrigger = new Bead() {
 		     public void messageReceived(Bead message) {
 		        System.out.println("I've been triggered!"); 
+		        System.exit(0);
 		     }
 		   };
 		   freqEnv.addSegment(0, 1000, myTrigger);

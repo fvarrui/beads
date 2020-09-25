@@ -1,12 +1,16 @@
+package net.beadsproject.beads.tutorial;
 
 
 import net.beadsproject.beads.core.AudioContext;
+import net.beadsproject.beads.core.io.JavaSoundAudioIO;
 import net.beadsproject.beads.ugens.Gain;
 import net.beadsproject.beads.ugens.Noise;
 
 public class Lesson01_AudioContext {
 
 	public static void main(String[] args) {
+		
+		JavaSoundAudioIO.printMixerInfo();
 
 		/*
 		 * Lesson 1: Make some noise! Note, if you don't know Java, you'd
@@ -20,7 +24,8 @@ public class Lesson01_AudioContext {
 		 * processing. It also connects the the JavaSound system and provides
 		 * you with an output device.
 		 */
-		ac = new AudioContext();
+		ac = new AudioContext();		
+		
 		/*
 		 * Make a noise-making object. Noise is a type of Class known as a UGen.
 		 * UGens have some number of audio inputs and audio outputs and do some

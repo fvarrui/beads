@@ -1,3 +1,4 @@
+package net.beadsproject.beads.tutorial;
 
 import java.io.IOException;
 
@@ -94,7 +95,7 @@ public class Lesson09_RecordToSample {
 						// In this example, we save the file to the same
 						// location that you can find the 1234.aif file used
 						// by some of the previous lessons.
-						sample.write("audio/lesson_09_out.wav",
+						sample.write("target/lesson_09_out.wav",
 								AudioFileType.WAV);
 					} catch (IOException e) {
 						System.out.println("Couldn't save sonification:");
